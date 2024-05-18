@@ -25,22 +25,24 @@ const CountdownTimer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
-      <div className="neon-box flex flex-col items-center justify-center p-4 bg-purple-800 text-center md:w-48 md:p-6"> {/* Add md:p-6 for padding */}
-        <span className="text-white text-lg font-semibold">Days</span>
-        <span className="text-white text-3xl font-semibold">{timeLeft.days}</span>
-      </div>
-      <div className="neon-box flex flex-col items-center justify-center p-4 bg-purple-800 text-center md:w-48 md:p-6"> {/* Add md:p-6 for padding */}
-        <span className="text-white text-lg font-semibold">Hours</span>
-        <span className="text-white text-3xl font-semibold">{timeLeft.hours}</span>
-      </div>
-      <div className="neon-box flex flex-col items-center justify-center p-4 bg-purple-800 text-center md:w-48 md:p-6"> {/* Add md:p-6 for padding */}
-        <span className="text-white text-lg font-semibold">Minutes</span>
-        <span className="text-white text-3xl font-semibold">{timeLeft.minutes}</span>
-      </div>
-      <div className="neon-box flex flex-col items-center justify-center p-4 bg-purple-800 text-center md:w-48 md:p-6"> {/* Add md:p-6 for padding */}
-        <span className="text-white text-lg font-semibold">Seconds</span>
-        <span className="text-white text-3xl font-semibold">{timeLeft.seconds}</span>
+    <div className="mt-8"> {/* Add margin top */}
+      <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-2 md:space-x-12">
+        <div className="neon-box flex flex-col items-center justify-center p-4 bg-purple-800 text-center md:w-48 md:p-6 font-geliat">
+          <span className="text-white text-2xl font-semibold">Days</span>
+          <span className="text-white text-3xl font-semibold">{timeLeft.days}</span>
+        </div>
+        <div className="neon-box flex flex-col items-center justify-center p-4 bg-purple-800 text-center md:w-48 md:p-6 font-geliat">
+          <span className="text-white text-2xl font-semibold">Hours</span>
+          <span className="text-white text-3xl font-semibold">{timeLeft.hours}</span>
+        </div>
+        <div className="neon-box flex flex-col items-center justify-center p-4 bg-purple-800 text-center md:w-48 md:p-6 font-geliat">
+          <span className="text-white text-2xl font-semibold">Minutes</span>
+          <span className="text-white text-3xl font-semibold">{timeLeft.minutes}</span>
+        </div>
+        <div className="neon-box flex flex-col items-center justify-center p-4 bg-purple-800 text-center md:w-48 md:p-6 font-geliat">
+          <span className="text-white text-2xl font-semibold">Seconds</span>
+          <span className="text-white text-3xl font-semibold">{timeLeft.seconds}</span>
+        </div>
       </div>
     </div>
   );
@@ -56,17 +58,24 @@ export default function Countdown() {
         {`
           @keyframes animate {
             0% {
-              box-shadow: 0 0 40px #FF10F0; /* Change the spread here */
+              box-shadow: 0 0 20px 10px #FF10F0; /* Increased thickness and spread */
             }
             100% {
-              box-shadow: 0 0 40px #FF10F0; /* Change the spread here */
+              box-shadow: 0 0 30px 20px #FF10F0; /* Increased thickness and spread */
             }
           }
 
           .neon-box {
             border-radius: 0.5rem;
-            box-shadow: 0 0 20px #FF10F0; /* Change the spread here */
+            box-shadow: 0 0 20px 10px #FF10F0; /* Increased thickness and spread */
             animation: animate 1s linear infinite alternate;
+          }
+
+          /* Increase space between boxes */
+          @media (min-width: 768px) {
+            .neon-box + .neon-box {
+              margin-left: 3rem; /* Adjust as needed */
+            }
           }
         `}
       </style>
