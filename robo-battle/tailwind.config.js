@@ -1,11 +1,11 @@
-// tailwind.config.js
-
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
         geliat: ['"Geliat Alt Bold"', 'sans-serif'],
+        orbitron: ['Orbitron', 'sans-serif'], // Add Orbitron font
       },
     },
   },

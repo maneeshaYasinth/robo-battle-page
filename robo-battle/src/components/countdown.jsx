@@ -25,8 +25,12 @@ const CountdownTimer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="mt-8"> {/* Add margin top */}
-      <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-2 md:space-x-12">
+    <div> {/* Add margin top */}
+      <h2 className="text-white text-center text-3xl font-geliat font-bold mb-6  pt-20 pb-4 relative">
+        REGISTRATION CLOSING IN
+        <span className="block w-48 h-1 bg-white absolute left-1/2 transform -translate-x-1/2 bottom-0 mt-18 "></span>
+      </h2>
+      <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12 pt-20"> {/* Increase space between boxes */}
         <div className="neon-box flex flex-col items-center justify-center p-4 bg-purple-800 text-center md:w-48 md:p-6 font-geliat">
           <span className="text-white text-2xl font-semibold">Days</span>
           <span className="text-white text-3xl font-semibold">{timeLeft.days}</span>
