@@ -26,7 +26,7 @@ const CountdownTimer = ({ targetDate }) => {
 
   return (
     <div> {/* Add margin top */}
-      <h2 className="text-white text-center text-3xl font-geliat font-bold mb-6  pt-20 pb-4 relative">
+      <h2 className="text-white text-center text-3xl font-krona mb-6  pt-20 pb-4 relative">
         REGISTRATION CLOSING IN
         <span className="block w-48 h-1 bg-white absolute left-1/2 transform -translate-x-1/2 bottom-0 mt-18 "></span>
       </h2>
