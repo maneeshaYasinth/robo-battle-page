@@ -27,7 +27,7 @@ const sortedMobileEvents = mobileEvents.sort((a, b) => parseDate(a.date) - parse
 const Timeline = () => {
   return (
     <>
-      <h2 className="text-white text-center text-3xl font-geliat font-bold mb-6 pt-20 pb-2 relative mt-60 md:mt-20">
+      <h2 className="text-white text-center text-3xl font-krona font-bold mb-6 pt-20 pb-2 relative mt-60 md:mt-20">
         TIMELINE
         <span className="block w-48 h-1 bg-white absolute left-1/2 transform -translate-x-1/2 bottom-0 mt-18 mb-0"></span>
       </h2>
