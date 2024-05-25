@@ -5,3 +5,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background: linear-gradient(135deg, #282727, #201e1e);
+  background-size: cover;
+  background-repeat: none;
+}
+
+h2 {
+  @apply text-xl md:text-4xl;
+}
+
+p {
+  @apply text-xl tracking-tight leading-relaxed;
+}
+
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(197, 48, 48, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.shiny-effect {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+
+  z-index: 1;
+  background: radial-gradient(circle, #ff10f1, transparent 70%);
+}
