@@ -10,11 +10,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar font-krona fixed top-0 left-0 w-full z-50  bg-opacity-50 backdrop-blur-md shadow-lg">
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 z-50 w-full bg-purple-800 bg-opacity-50 shadow-lg navbar font-krona backdrop-blur-md ">
+      <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="flex items-center">
-            <img src={logo} alt="Logo" className="h-12 w-12" />
+            <img src={logo} alt="Logo" className="w-12 h-12" />
           </div>
           <div className="hidden sm:flex sm:items-center sm:ml-6 sm:space-x-4">
             <a
@@ -50,13 +50,13 @@ const Navbar = () => {
           </div>
           <div className="sm:hidden">
             <button
-              className="text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white p-2 rounded-md"
+              className="p-2 text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               onClick={toggleMenu}
             >
               {isOpen ? (
-                <FiX className="h-6 w-6" />
+                <FiX className="w-6 h-6" />
               ) : (
-                <FiMenu className="h-6 w-6" />
+                <FiMenu className="w-6 h-6" />
               )}
             </button>
           </div>
@@ -64,44 +64,44 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="fixed inset-0 z-50 flex bg-purple-600">
-          <div className="bg-purple-600 bg-opacity-50 backdrop-blur-lg shadow-lg w-full p-4 space-y-4 transform transition-transform duration-300 ease-in-out">
-            <div className="flex justify-between items-center ">
-              {/* <img src={logo} alt="Logo" className="h-12 w-12" /> */}
+          <div className="w-full p-4 space-y-4 transition-transform duration-300 ease-in-out transform bg-purple-600 bg-opacity-50 shadow-lg backdrop-blur-lg">
+            <div className="flex items-center justify-between ">
+              {/* <img src={logo} alt="Logo" className="w-12 h-12" /> */}
               <button
                 className="text-gray-500 focus:outline-none"
                 onClick={toggleMenu}
               >
-                <FiX className="h-8 w-8" />
+                <FiX className="w-8 h-8" />
               </button>
             </div>
-            <div className="flex flex-col items-start space-y-4 mt-4">
+            <div className="flex flex-col items-start mt-4 space-y-4">
               <a
                 href="/"
-                className="text-gray-700 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-lg font-medium w-full"
+                className="w-full px-3 py-2 text-lg font-medium text-gray-700 rounded-md hover:bg-gray-200 hover:text-gray-900"
               >
                 Home
               </a>
               <a
                 href="/registeration"
-                className="text-gray-700 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-lg font-medium w-full"
+                className="w-full px-3 py-2 text-lg font-medium text-gray-700 rounded-md hover:bg-gray-200 hover:text-gray-900"
               >
                 Register
               </a>
               <a
                 href="/about-us"
-                className="text-gray-700 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-lg font-medium w-full"
+                className="w-full px-3 py-2 text-lg font-medium text-gray-700 rounded-md hover:bg-gray-200 hover:text-gray-900"
               >
                 About
               </a>
               <a
                 href="/timeline"
-                className="text-gray-700 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-lg font-medium w-full"
+                className="w-full px-3 py-2 text-lg font-medium text-gray-700 rounded-md hover:bg-gray-200 hover:text-gray-900"
               >
                 Timeline
               </a>
               <a
                 href="/contact-us"
-                className="text-gray-700 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-lg font-medium w-full"
+                className="w-full px-3 py-2 text-lg font-medium text-gray-700 rounded-md hover:bg-gray-200 hover:text-gray-900"
               >
                 Contact
               </a>
