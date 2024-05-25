@@ -10,44 +10,24 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 z-50 w-full bg-purple-800 bg-opacity-50 shadow-lg navbar font-krona backdrop-blur-md ">
+    <nav className="fixed top-0 left-0 z-50 w-full shadow-lg navbar font-krona">
       <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
+          {/* Logo */}
           <div className="flex items-center">
             <img src={logo} alt="Logo" className="w-12 h-12" />
           </div>
+          
+          {/* Nav Links - Desktop */}
           <div className="hidden sm:flex sm:items-center sm:ml-6 sm:space-x-4">
-            <a
-              href="/"
-              className="nav-link"
-            >
-              Home
-            </a>
-            <a
-              href="/registeration"
-              className="nav-link"
-            >
-              Register
-            </a>
-            <a
-              href="/about-us"
-              className="nav-link"
-            >
-              About
-            </a>
-            <a
-              href="/timeline"
-              className="nav-link"
-            >
-              Timeline
-            </a>
-            <a
-              href="/contact-us"
-              className="nav-link"
-            >
-              Contact
-            </a>
+            <NavLink href="/">Home</NavLink>
+            <NavLink href="/registeration">Register</NavLink>
+            <NavLink href="/about-us">About</NavLink>
+            <NavLink href="/timeline">Timeline</NavLink>
+            <NavLink href="/contact-us">Contact</NavLink>
           </div>
+          
+          {/* Mobile Menu Button */}
           <div className="sm:hidden">
             <button
               className="p-2 text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -62,55 +42,49 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      
+      {/* Sidebar - Mobile */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex bg-purple-600">
-          <div className="w-full p-4 space-y-4 transition-transform duration-300 ease-in-out transform bg-purple-600 bg-opacity-50 shadow-lg backdrop-blur-lg">
-            <div className="flex items-center justify-between ">
-              {/* <img src={logo} alt="Logo" className="w-12 h-12" /> */}
+        <div className="fixed inset-0 z-50 flex">
+          {/* Sidebar Content */}
+          <div className="w-full h-full bg-purple-600 p-4 space-y-4 transition-transform duration-300 ease-in-out transform backdrop-filter backdrop-blur-lg shadow-lg">
+            {/* Close Button */}
+            <div className="flex items-center justify-between">
               <button
-                className="text-gray-500 focus:outline-none"
+                className="text-white focus:outline-none"
                 onClick={toggleMenu}
               >
-                <FiX className="w-8 h-8" />
+                <FiX className="w-10 h-10" />
               </button>
             </div>
-            <div className="flex flex-col items-start mt-4 space-y-4">
-              <a
-                href="/"
-                className="w-full px-3 py-2 text-lg font-medium text-gray-700 rounded-md hover:bg-gray-200 hover:text-gray-900"
-              >
-                Home
-              </a>
-              <a
-                href="/registeration"
-                className="w-full px-3 py-2 text-lg font-medium text-gray-700 rounded-md hover:bg-gray-200 hover:text-gray-900"
-              >
-                Register
-              </a>
-              <a
-                href="/about-us"
-                className="w-full px-3 py-2 text-lg font-medium text-gray-700 rounded-md hover:bg-gray-200 hover:text-gray-900"
-              >
-                About
-              </a>
-              <a
-                href="/timeline"
-                className="w-full px-3 py-2 text-lg font-medium text-gray-700 rounded-md hover:bg-gray-200 hover:text-gray-900"
-              >
-                Timeline
-              </a>
-              <a
-                href="/contact-us"
-                className="w-full px-3 py-2 text-lg font-medium text-gray-700 rounded-md hover:bg-gray-200 hover:text-gray-900"
-              >
-                Contact
-              </a>
+            
+            {/* Navigation Links */}
+            <div className="flex flex-col items-start space-y-4 ">
+              <NavLink  className="text-white"href="/">Home</NavLink>
+              <NavLink className="text-white" href="/registeration">Register</NavLink>
+              <NavLink  className="text-white"href="/about-us">About</NavLink>
+              <NavLink  className="text-white"href="/timeline">Timeline</NavLink>
+              <NavLink  className="text-white"href="/contact-us">Contact</NavLink>
             </div>
           </div>
-          <div className="fixed inset-0 bg-opacity-50" onClick={toggleMenu}></div>
+          
+          {/* Overlay - Close Sidebar on Click */}
+          <div className="fixed inset-0 bg-black bg-opacity-50" onClick={toggleMenu}></div>
         </div>
       )}
     </nav>
+  );
+};
+
+// NavLink Component for Consistency
+const NavLink = ({ href, children }) => {
+  return (
+    <a
+      href={href}
+      className="w-full px-3 py-2 text-lg font-medium text-white rounded-md hover:bg-gray-200 hover:text-gray-900"
+    >
+      {children}
+    </a>
   );
 };
 
