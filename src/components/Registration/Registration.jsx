@@ -1,10 +1,10 @@
 import React from "react";
-import ShinyEffect from "../ShinyEffect/ShinyEffect";
+
 
 const Registration = () => {
   return (
     <div className="px-20 p-5 max-w-screen h-full w-f bg-gradient-to-r from-slate-900 to-violet-950 min-h-screen py-10">
-      <ShinyEffect left={100} top={100} size={500} />
+      
       <h1 className=" text-white font-krona text-2xl md:text-3xl
       ">Registration</h1>
       <div className="flex flex-col justify-center items-center gap-8 md:justify-between md:gap-10 md:flex-row py-5 mt-5">
