@@ -3,7 +3,7 @@ import React from "react";
 
 const Registration = () => {
   return (
-    <div className="px-20 p-5 max-w-screen h-full w-f bg-gradient-to-r from-slate-900 to-violet-950 min-h-screen py-10">
+    <div className="px-20 p-5 max-w-screen h-full w-f  min-h-screen py-10">
       
       <h1 className=" text-white font-krona text-2xl md:text-3xl
       ">Registration</h1>
