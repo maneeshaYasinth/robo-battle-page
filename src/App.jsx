@@ -12,11 +12,14 @@ import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen relative overflow-hidden"> {/* Ensure relative positioning and no overflow */}
       <Navbar />
-      
-      <div>
-      <ShinyEffect left={700} top={0} size={800} />
+
+      <div className="absolute inset-0">
+        <ShinyEffect left={1000} top={0} size={1000} />
+        <div className="hidden md:block">
+          <ShinyEffect left={0} top={700} size={1200} />
+        </div>
       </div>
       <Home />
       <div>
