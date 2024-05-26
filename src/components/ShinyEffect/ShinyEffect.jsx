@@ -2,11 +2,9 @@ import React from "react";
 
 const ShinyEffect = ({ left, right, top, size = 500 }) => {
   const positionStyle = {
-    position: 'absolute',
     top: `${top}px`,
     width: `${size}px`,
     height: `${size}px`,
-    overflow: 'hidden', // Ensure no overflow from the div itself
     zIndex: -1,
   };
 
@@ -17,7 +15,7 @@ const ShinyEffect = ({ left, right, top, size = 500 }) => {
     positionStyle.right = `${right}px`;
   }
 
-  return <div className="shiny-effect" style={positionStyle}></div>;
+  return <div className=" shiny-effect" style={positionStyle}></div>;
 };
 
 export default ShinyEffect;
