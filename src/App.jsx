@@ -9,22 +9,25 @@ import ShinyEffect from "./components/ShinyEffect/ShinyEffect";
 import Team from "./components/ContactUs/Contact";
 import Footer from "./components/Footer/Footer";
 import WininngPrices from "./components/WinningPrices/WininngPrices";
+import About from "./components/AboutUs/About";
 
 const App = () => {
   return (
     <div className="min-h-screen relative overflow-hidden"> {/* Ensure relative positioning and no overflow */}
       <Navbar />
-
-      <div className="absolute inset-0">
+{/* pink shine effect */}
+      {/* <div className="absolute inset-0">
         <ShinyEffect left={1000} top={0} size={1000} />
         <div className="hidden md:block">
           <ShinyEffect left={0} top={700} size={1200} />
         </div>
-      </div>
+      </div> */}
       <Home />
-      <Registration />
       <Countdown />
+      <Registration />
+      
       <Awareness />
+      <About/>
       <WininngPrices />
       <Timeline />
       <Team />
