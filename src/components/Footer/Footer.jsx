@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './Footer.css'
+import './footer.css'
 import { ImLocation2 } from "react-icons/im";
 import { ImPhone } from "react-icons/im";
 import { ImMail2 } from "react-icons/im";
@@ -8,11 +8,11 @@ import { IoLogoInstagram } from "react-icons/io";
 import { ImLinkedin } from "react-icons/im";
 import { ImTwitter } from "react-icons/im";
 import { ImYoutube } from "react-icons/im";
-import logo from './battlebot logo.jpeg';
+import logo from '../../assets/battlebot logo.jpeg';
 
 
 
-function App() {
+function Footer() {
   const [count, setCount] = useState(0)
     
   return (
@@ -71,4 +71,4 @@ function App() {
   )
 }
 
-export default App
+export default Footer
