@@ -13,13 +13,14 @@ const App = () => {
     <div className="min-h-screen ">
       <Navbar />
       
-      <div>
-      <ShinyEffect left={700} top={0} size={800} />
+      <div  className=" absolute inset-0 overflow-hidden md:overflow-visible">
+      <ShinyEffect left={1000} top={0} size={1000} />
+      <div className="hidden md:block">
+      <ShinyEffect left={0} top={700} size={1200} />
+      </div>
       </div>
       <Home />
-      <div>
-      <ShinyEffect left={0} top={700} size={900} />
-      </div>
+      
       <Registration />
 
       <Countdown />
