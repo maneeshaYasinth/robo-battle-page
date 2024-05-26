@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 import { IoLogoFacebook } from "react-icons/io";
 import { ImLinkedin } from "react-icons/im";
 import { ImYoutube } from "react-icons/im";
@@ -7,7 +8,8 @@ import { ImYoutube } from "react-icons/im";
 
 
 
-function App() {
+
+function Footer() {
   const [count, setCount] = useState(0)
     
   return (
@@ -41,4 +43,4 @@ function App() {
   )
 }
 
-export default App
+export default Footer
