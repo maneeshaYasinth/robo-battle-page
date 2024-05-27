@@ -28,7 +28,7 @@ const App = () => {
       <WininngPrices />
       <Timeline />
       <Team />
-      {/* <Footer/> */}
+      <Footer/> 
     </div>
   );
 };

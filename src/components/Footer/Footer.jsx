@@ -1,74 +1,51 @@
-import { useState } from 'react'
-import './footer.css'
-import { ImLocation2 } from "react-icons/im";
-import { ImPhone } from "react-icons/im";
-import { ImMail2 } from "react-icons/im";
+import React, { useState } from 'react';
 import { IoLogoFacebook } from "react-icons/io";
-import { IoLogoInstagram } from "react-icons/io";
 import { ImLinkedin } from "react-icons/im";
-import { ImTwitter } from "react-icons/im";
 import { ImYoutube } from "react-icons/im";
-import logo from '../../assets/battlebot logo.jpeg';
-
-
 
 function Footer() {
-  const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0);
+      
+    return (
+        <footer className="footer-distributed">
+            <div className="grid grid-cols-2 gap-0 font-krona">
+                <div className='bg-black text-white bg-gray-900 p-4 md:px-4'>
+                    <p className='px-20 text-xm md:text-3xl'>Organized By</p>
+                </div>
+                <div className='bg-black text-white bg-gray-900 p-4 md:px-4'>
+                    <p className='px-20 text-xm md:text-3xl md:ml-14'>FOLLOW US ON</p>
+                </div>
+            </div>
     
-  return (
-    
-    <footer class="footer-distributed">
-
-        <div class="footer-left">
-            <img src={logo} class="battlebot_logo"></img>
-            
-            
-            <h3>ROBOT<span>BATTLES</span></h3>
-
-            <p class="footer-links">
-                <a href="#">Home &nbsp; </a>
-                |
-                <a href="#">&nbsp; About &nbsp;</a>
-                |
-                <a href="#">&nbsp; Contact &nbsp;</a>
-                |
-                <a href="#">&nbsp; Blog &nbsp;</a>
+            <div className="footer-left">
+                <div className="grid grid-cols-3 gap-0">
+                    <div className='flex justify-center md:justify-start'>
+                        <img src="club_logo.png" alt="1" className='w-1/2 md:w-1/3 ml-0 md:ml-16 mt-12'/>
+                    </div>
+                    <div className='flex justify-center md:justify-start'>
+                        <h3 className='ml-0 md:-ml-16 mt-4 md:mt-16 text-white text-lg md:text-2xl text-center md:text-left'>
+                            Electronics and Computer<br/>
+                            <span>Science Club</span>
+                        </h3>
+                    </div>
+                    <div className='grid grid-cols-3 place-content-start mt-16'>
+                        <a href="https://web.facebook.com/UOKRobotBattles">
+                            <IoLogoFacebook className='w-10 h-10 md:w-14 md:h-14 text-white'/>
+                        </a>
+                        <a href="https://www.linkedin.com/company/uokrobotbattles/posts/?feedView=all">
+                            <ImLinkedin className='w-10 h-10 md:w-14 md:h-14 text-white'/>
+                        </a>
+                        <a href="https://www.youtube.com/@ECSCUOK">
+                            <ImYoutube className='w-10 h-10 md:w-14 md:h-14 text-white'/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p className='text-gray-400 text-xs md:text-sm font-normal text-center mb-4 md:mb-9'>
+                © 2024 All rights reserved
             </p>
-
-            <p class="footer-company-name">Copyright © 2024 <strong>ECSC Club</strong> All rights reserved</p>
-        </div>
-
-        <div class="footer-center">
-            <div>
-                <i><ImLocation2 /></i>
-                <p><span>Faculty of Science</span>
-                    University of Kelaniya</p>
-            </div>
-
-            <div>
-                <i ><ImPhone /></i>
-                <p>(+94) 12 345 6789</p>
-            </div>
-            <div>
-                <i ><ImMail2 /></i>
-                <p><a href="mailto:ecs.uok@gmail.com">ecs.uok@gmail.com</a></p>
-            </div>
-        </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About the UOK Robot Battle</span>
-                <strong>UOK</strong> First-ever robotic battle experience brought to you by the Electronics and Computer Science Club, University of Kelaniya.
-            </p>
-            <div class="footer-icons">
-                <a href="#"><i ><IoLogoFacebook /></i></a>
-                <a href="#"><i ><IoLogoInstagram /></i></a>
-                <a href="https://www.linkedin.com/company/uokrobotbattles/posts/?feedView=all"><i class="fa fa-linkedin"><ImLinkedin /></i></a>
-                <a href="#"><i ><ImTwitter /></i></a>
-                <a href="#"><i ><ImYoutube /></i></a>
-            </div>
-        </div>
-    </footer>
-  )
+        </footer>
+    );
 }
 
-export default Footer
+export default Footer;
