@@ -13,9 +13,10 @@ import About from "./components/AboutUs/About";
 
 const App = () => {
   return (
-    <div className="min-h-screen relative overflow-hidden"> {/* Ensure relative positioning and no overflow */}
+    <div className="min-h-screen relative overflow-hidden">
+      {" "}
+      {/* Ensure relative positioning and no overflow */}
       <Navbar />
-
       <div className="absolute inset-0">
         <ShinyEffect left={1000} top={0} size={1000} />
         <div className="hidden md:block">
@@ -23,14 +24,14 @@ const App = () => {
         </div>
       </div>
       <Home />
-      <Registration />
       <Countdown />
+      <Registration />
       <Awareness />
-      <About/>
+      <About />
       <WininngPrices />
       <Timeline />
       <Team />
-      <Footer/> 
+      <Footer />
     </div>
   );
 };
