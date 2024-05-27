@@ -8,8 +8,9 @@ import Registration from "./components/Registration/Registration";
 import Awareness from "./components/AwarenessSession/Awareness";
 import ShinyEffect from "./components/ShinyEffect/ShinyEffect";
 import Team from "./components/ContactUs/Contact"
-import Footer from "./components/Footer/Footer";
+
 import WininngPrices from "./components/WinningPrices/WininngPrices";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
