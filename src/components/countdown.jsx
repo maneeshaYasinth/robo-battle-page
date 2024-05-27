@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const CountdownTimer = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState({
@@ -25,27 +25,39 @@ const CountdownTimer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div> {/* Add margin top */}
+    <div className="md:mt-[0px]">
+      {" "}
+      {/* Add margin top */}
       <h2 className="text-white text-center text-3xl font-krona mb-6  pt-20 pb-4 relative">
         REGISTRATION CLOSING IN
         <span className="block w-48 h-1 bg-white absolute left-1/2 transform -translate-x-1/2 bottom-0 mt-18 "></span>
       </h2>
-      <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12 pt-20"> {/* Increase space between boxes */}
-        <div className="neon-box flex flex-col items-center justify-center p-4 bg-purple-800 text-center md:w-48 md:p-6 font-geliat">
+      <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12 pt-20">
+        {" "}
+        {/* Increase space between boxes */}
+        <div className="neon-box flex flex-col items-center justify-center p-4 bg-gradiant-b from-violet-950 to-slate-900 text-center md:w-48 md:p-6 font-geliat">
           <span className="text-white text-2xl font-semibold">Days</span>
-          <span className="text-white text-3xl font-semibold">{timeLeft.days}</span>
+          <span className="text-white text-3xl font-semibold">
+            {timeLeft.days}
+          </span>
         </div>
-        <div className="neon-box flex flex-col items-center justify-center p-4 bg-purple-800 text-center md:w-48 md:p-6 font-geliat">
+        <div className="neon-box flex flex-col items-center justify-center p-4 bg-gradiant-b from-violet-950 to-slate-900 text-center md:w-48 md:p-6 font-geliat">
           <span className="text-white text-2xl font-semibold">Hours</span>
-          <span className="text-white text-3xl font-semibold">{timeLeft.hours}</span>
+          <span className="text-white text-3xl font-semibold">
+            {timeLeft.hours}
+          </span>
         </div>
-        <div className="neon-box flex flex-col items-center justify-center p-4 bg-purple-800 text-center md:w-48 md:p-6 font-geliat">
+        <div className="neon-box flex flex-col items-center justify-center p-4 bg-gradiant-b from-violet-950 to-slate-900 text-center md:w-48 md:p-6 font-geliat">
           <span className="text-white text-2xl font-semibold">Minutes</span>
-          <span className="text-white text-3xl font-semibold">{timeLeft.minutes}</span>
+          <span className="text-white text-3xl font-semibold">
+            {timeLeft.minutes}
+          </span>
         </div>
-        <div className="neon-box flex flex-col items-center justify-center p-4 bg-purple-800 text-center md:w-48 md:p-6 font-geliat">
+        <div className="neon-box flex flex-col items-center justify-center p-4 bg-gradiant-b from-violet-950 to-slate-900 text-center md:w-48 md:p-6 font-geliat">
           <span className="text-white text-2xl font-semibold">Seconds</span>
-          <span className="text-white text-3xl font-semibold">{timeLeft.seconds}</span>
+          <span className="text-white text-3xl font-semibold">
+            {timeLeft.seconds}
+          </span>
         </div>
       </div>
     </div>
@@ -53,7 +65,7 @@ const CountdownTimer = ({ targetDate }) => {
 };
 
 export default function Countdown() {
-  const targetDate = new Date('2024-06-04T23:59:59'); // Set target date to May 25, 2024
+  const targetDate = new Date("2024-06-04T23:59:59"); // Set target date to May 25, 2024
 
   return (
     <div className="App">
@@ -85,4 +97,4 @@ export default function Countdown() {
       </style>
     </div>
   );
-};
+}
