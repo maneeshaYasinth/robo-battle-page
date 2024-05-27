@@ -15,11 +15,9 @@ function Home() {
         thrilling display of technological might. Join us in the arena where the future of robotics comes alive.
         </p>
     </div>
-    <div className='mt-10'>
-    <a href="https://docs.google.com/forms/d/1aW2N9A0GmMuo4zoIm7gCOGZIWwO4zoyA-lY4JXlxypQ/viewform?edit_requested=true">
-                <button className=" bg-gradient-to-r from-pink-500 border-pink-400 border-2 to-fuchsia-800 text-lg text-white font-poppins px-6 py-2 rounded-full cursor-pointer">
-                 Register</button>
-              </a>
+    <div>
+     <button className='inline-block px-12 py-3 ml-3 mr-4 text-center text-white duration-300 border border-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl font-poppins mt-7 hover:text-white hover:border hover:bg-transparent hover:border-pink-300'>
+        <a href="#" >Register</a></button> 
     </div>
     <div className='bottom-0 w-full top-12 xl:w-1/2 xl:absolute right-1'>
         <img src="1.png" alt="1" />
