@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 
 const About = () => {
@@ -45,3 +46,5 @@ const About = () => {
 };
 
 export default About;
+=======
+>>>>>>> a0834a043823b16425afb70bc74a41a19a9c1e7a
