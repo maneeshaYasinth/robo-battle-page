@@ -18,7 +18,7 @@ const teamMembers = [
     email: "Kasunp@kln.ac.lk",
     photo: kasunsir,
     description:
-      "Lecturer, Department of Physics, and Electronics, Faculty of Science, University of Kelaniya",
+      "Lecturer, Department of Physics and Electronics, Faculty of Science, University of Kelaniya",
   },
   {
     role: "Project Manager",
@@ -36,25 +36,25 @@ const TeamCard = ({ member, className, index }) => (
     <img
       src={member.photo}
       alt={member.name}
-      className="w-24 h-24 rounded-full mb-4"
+      className="w-24 h-24 mb-4 rounded-full"
     />
-    <h3 className="text-xl font-bold mb-2">{member.role}</h3>
-    <p className="font-semibold mb-2">{member.name}</p>
-    {member.description && <p className="text-sm mb-2">{member.description}</p>}
+    <h3 className="mb-2 text-3xl font-bold ">{member.role}</h3>
+    <p className="mb-2 ">{member.name}</p>
+    {member.description && <p className="mb-2 text-sm opacity-90">{member.description}</p>}
     <div className="text-sm">
-      {index !== 1 && <p className="mb-1">📞 {member.phone}</p>}
-      <p>📧 {member.email}</p>
+      {index !== 1 && <p className="mb-1 opacity-60">📞 {member.phone}</p>}
+      <p className="opacity-60">📧 {member.email}</p>
     </div>
   </div>
 );
 
 const Team = () => (
   <div>
-    <h2 className="text-white text-center text-3xl md:text-4xl font-krona font-bold mb-6 pt-20 pb-2 relative mt-5 md:mt-20">
+    <h2 className="relative pt-20 pb-2 mt-5 mb-6 text-3xl font-bold text-center text-white md:text-4xl font-krona md:mt-20">
       CONTACT US
-      <span className="block w-48 h-1 bg-white absolute left-1/2 transform -translate-x-1/2 bottom-0 mt-18 mb-0"></span>
+      <span className="absolute bottom-0 block w-48 h-1 mb-0 transform -translate-x-1/2 bg-white left-1/2 mt-18"></span>
     </h2>
-    <div className="flex flex-col md:flex-row md:justify-center gap-6 p-6 ">
+    <div className="flex flex-col gap-6 p-6 md:flex-row md:justify-center ">
       {teamMembers.map((member, index) => (
         <TeamCard
           key={member.name}
