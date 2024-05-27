@@ -9,6 +9,7 @@ import ShinyEffect from "./components/ShinyEffect/ShinyEffect";
 import Team from "./components/ContactUs/Contact";
 import Footer from "./components/Footer/Footer";
 import WininngPrices from "./components/WinningPrices/WininngPrices";
+import About from "./components/AboutUs/About";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Registration />
       <Countdown />
       <Awareness />
+      <About/>
       <WininngPrices />
       <Timeline />
       <Team />

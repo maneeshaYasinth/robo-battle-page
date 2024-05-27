@@ -9,10 +9,10 @@ function Footer() {
     return (
         <footer className="footer-distributed">
             <div className="grid grid-cols-2 gap-0 font-krona">
-                <div className='bg-black text-white bg-gray-900 p-4 md:px-4'>
+                <div className=' text-white bg-gray-900 p-4 md:px-4'>
                     <p className='px-20 text-xm md:text-3xl'>Organized By</p>
                 </div>
-                <div className='bg-black text-white bg-gray-900 p-4 md:px-4'>
+                <div className=' text-white bg-gray-900 p-4 md:px-4'>
                     <p className='px-20 text-xm md:text-3xl md:ml-14'>FOLLOW US ON</p>
                 </div>
             </div>
