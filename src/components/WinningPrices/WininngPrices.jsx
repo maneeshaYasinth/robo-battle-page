@@ -12,7 +12,7 @@ const WininngPrices = () => {
         </h1>
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-8 mt-10 md:flex-row md:items-center md:justify-between md:content-center">
+      <div className="flex flex-col justify-center items-center gap-8 mt-10 md:flex-row md:items-center md:justify-between lg:justify-between md:content-center">
         {/* light weight */}
         <div className=" py-5">
           <h2 className=" flex flex-col gap-5  font-krona text-xl text-white justify-center items-center content-center ">
@@ -20,26 +20,26 @@ const WininngPrices = () => {
           </h2>
          <div className="flex flex-col gap-5 mt-5">
            {/* card one */}
-           <div className="flex gap-5 mt-4 justify-center items-center content-center border border-purple-500 rounded-md py-2">
+           <div className="flex gap-5 mt-4 justify-center items-center content-center border border-purple-500 rounded-md md:py-2 p-3">
             <div className=" text-7xl text-yellow-400">
               <GiTrophyCup />
             </div>
-            <div className=" text-white font-poppins p-2 flex flex-col gap-1">
+            <div className=" text-white font-poppins p-8 flex flex-col gap-1">
               <p className=" border rounded-full border-purple-500 bg-gradient-to-r from-purple-700 to-fuchsia-950 px-2 items-center justify-center content-center">
                 Champions
               </p>
-              <p className=" border rounded-full border-purple-500 bg-gradient-to-r from-purple-700 to-fuchsia-950 px-3">
+              <p className=" border rounded-xl border-purple-500 bg-gradient-to-r from-purple-700 to-fuchsia-950 md:px-3 px-3 ">
                 Rs.20,000 + Giant Nut
               </p>
             </div>
           </div>
           {/* card one */}
-          <div className="flex gap-5 mt-4 justify-center items-center content-center border border-purple-500 rounded-md py-2">
+          <div className="flex gap-5 mt-4 justify-center items-center content-center border border-purple-500 rounded-md md:py-2 py-3 px-2">
             <div className=" text-7xl text-stone-200">
               <GiTrophyCup />
             </div>
-            <div className=" text-white font-poppins p-2 flex flex-col gap-1">
-              <p className=" border rounded-full border-purple-500 bg-gradient-to-r from-purple-700 to-fuchsia-950 px-7 items-center justify-center content-center">
+            <div className=" text-white font-poppins p-8 md:p-2 flex flex-col gap-1">
+              <p className=" border rounded-full border-purple-500 bg-gradient-to-r from-purple-700 to-fuchsia-950 md:px-7 px-3  py-2 items-center justify-center  content-center w-[200px]">
                 1st Runners up
               </p>
               <p className=" border rounded-full border-purple-500 bg-gradient-to-r from-purple-700 to-fuchsia-950 px-7">
@@ -52,7 +52,7 @@ const WininngPrices = () => {
             <div className=" text-7xl text-amber-700">
               <GiTrophyCup />
             </div>
-            <div className=" text-white font-poppins p-2 flex flex-col gap-1">
+            <div className=" text-white font-poppins md:p-2 p-8 flex flex-col gap-1">
               <p className=" border rounded-full border-purple-500 bg-gradient-to-r from-purple-700 to-fuchsia-950 px-7 items-center justify-center content-center">
                 2nd Runners up
               </p>
@@ -64,7 +64,7 @@ const WininngPrices = () => {
          </div>
         </div>
         {/* heavy weight */}
-        <div className="mt-5 flex flex-col justify-center items-center">
+        <div className=" mt-5 flex flex-col justify-center items-center">
           <div>
             <h2 className=" font-krona text-xl text-white justify-center items-center content-center">
               Havy-weight
@@ -73,17 +73,17 @@ const WininngPrices = () => {
           {/* giant nut image */}
           <div className="flex flex-col justify-center items-center gap-5 mt-5 py-8">
             <div className="mt-3">
-              <img className=" w-40 md:w-60" src="/nut.png" alt="#" />
+              <img className=" w-40 md:w-80" src="/nut.png" alt="#" />
             </div>
-            <div className="flex gap-5 mt-4 justify-center items-center content-center border border-purple-500 rounded-md py-2">
-              <div className=" text-7xl text-yellow-400">
+            <div className="flex gap-4 mt-4 justify-center items-center content-center border border-purple-500 rounded-md py-2">
+              <div className=" text-7xl text-yellow-400 ml-2">
                 <GiTrophyCup />
               </div>
-              <div className=" text-white font-poppins p-2 flex flex-col gap-1">
+              <div className=" text-white font-poppins md:p-2 p-9 flex flex-col gap-1">
                 <p className=" border rounded-full border-purple-500 bg-gradient-to-r from-purple-700 to-fuchsia-950 px-2 items-center justify-center content-center">
                   Champions
                 </p>
-                <p className=" border rounded-full border-purple-500 bg-gradient-to-r from-purple-700 to-fuchsia-950 px-7">
+                <p className=" border rounded-full border-purple-500 bg-gradient-to-r from-purple-700 to-fuchsia-950 px-7 w-[200px]">
                   Giant Nut
                 </p>
               </div>
