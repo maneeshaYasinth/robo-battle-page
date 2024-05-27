@@ -3,13 +3,13 @@ import Countdown from "./components/countdown";
 import Timeline from "./components/timeline";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
-
 import Registration from "./components/Registration/Registration";
 import Awareness from "./components/AwarenessSession/Awareness";
 import ShinyEffect from "./components/ShinyEffect/ShinyEffect";
-import Team from "./components/ContactUs/Contact"
+import Team from "./components/ContactUs/Contact";
 import Footer from "./components/Footer/Footer";
 import WininngPrices from "./components/WinningPrices/WininngPrices";
+import About from "./components/AboutUs/About";
 
 const App = () => {
   return (
@@ -23,13 +23,15 @@ const App = () => {
         </div>
       </div> */}
       <Home />
-      <Registration />
       <Countdown />
+      <Registration />
+      
       <Awareness />
+      <About/>
       <WininngPrices />
       <Timeline />
       <Team />
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };
