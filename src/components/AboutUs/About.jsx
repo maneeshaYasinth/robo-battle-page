@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="px-20 p-5 max-w-screen h-full w-f  min-h-screen py-10 items-center justify-center mt-20">
+    <div className="md:px-20 px-10 p-5 max-w-screen h-full w-f  min-h-screen py-10 items-center justify-center mt-20">
       <div className=" font-krona text-3xl md:text-4xl text-white ">
         <h1 className="  text-center md:text-start font-krona">About Us</h1>
       </div>

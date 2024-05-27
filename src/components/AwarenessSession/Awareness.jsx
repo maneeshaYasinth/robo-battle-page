@@ -3,7 +3,7 @@ import React from "react";
 const Awareness = () => {
   return (
     <div
-      className="px-20 mt-[60px] py-5  md:mt-[-80px] items-center gap-10
+      className="md:px-20 px-10 mt-[60px] py-5  md:mt-[-80px] items-center gap-10
     md:text-start
     text-center"
     >
@@ -29,8 +29,8 @@ const Awareness = () => {
           </div>
           <div>
             <img
-              className="w-[400px] md:w-[1500px] mr-10"
-              src="/KASUN.jpg"
+              className="w-[400px] md:w-[2000px] md:h-[250px] mr-10 rounded-lg  border-violet-900 border-8"
+              src="/Youtube - 3.png"
               alt="robo"
             />
           </div>
