@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/Button";
 
 const About = () => {
   return (
@@ -31,11 +32,17 @@ const About = () => {
               while bringing together a community of passionate enthusiasts.
             </p>
             <div className="py-5 flex justify-center md:flex md:justify-start">
-              <a href=" https://drive.google.com/drive/folders/13tm3gtQj4lEXUJWDt4vntjc1XGCUjIaE ">
+              {/* <a href=" https://drive.google.com/drive/folders/13tm3gtQj4lEXUJWDt4vntjc1XGCUjIaE ">
                 <button className=" bg-gradient-to-r from-pink-500 border-pink-400 border-2 to-fuchsia-800 text-lg text-white font-poppins px-4 py-2 rounded-full cursor-pointer">
                   Read More...
                 </button>{" "}
-              </a>
+              </a> */}
+              <div>
+                <Button
+                  text="Read More..."
+                  url="https://drive.google.com/drive/folders/13tm3gtQj4lEXUJWDt4vntjc1XGCUjIaE"
+                />{" "}
+              </div>
             </div>
           </div>
         </div>

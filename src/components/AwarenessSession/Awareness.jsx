@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/Button";
 
 const Awareness = () => {
   return (
@@ -21,11 +22,17 @@ const Awareness = () => {
               dominate your competition and ensure your robot is battle-ready
               according to the latest rules and standards.
             </p>
-            <a href="https://drive.google.com/file/d/12-g5isYXt1Hpny74pIzvhhKUxRroL5XZ/view?usp=drive_link">
+            {/* <a href="https://drive.google.com/file/d/12-g5isYXt1Hpny74pIzvhhKUxRroL5XZ/view?usp=drive_link">
               <button className=" bg-gradient-to-r from-pink-500 border-pink-400 border-2 to-fuchsia-800 text-lg text-white font-poppins px-4 py-2 rounded-full mt-8">
                 Watch Now
               </button>{" "}
-            </a>
+            </a> */}
+            <div>
+              <Button
+                text="Watch Now"
+                url="https://drive.google.com/file/d/12-g5isYXt1Hpny74pIzvhhKUxRroL5XZ/view?usp=drive_link"
+              />{" "}
+            </div>
           </div>
           <div>
             <img
