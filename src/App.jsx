@@ -17,19 +17,19 @@ const App = () => {
       {" "}
       {/* Ensure relative positioning and no overflow */}
       <Navbar />
-      <div className="absolute inset-0">
+      <div className="">
         <ShinyEffect left={900} top={-300} size={1500} />
         <div className="hidden md:block">
           <ShinyEffect left={-1000} top={700} size={1500} />
         </div>
       </div>
-      <div className="absolute inset-0">
+      <div className="">
         <ShinyEffect left={1000} top={1200} size={1500} />
         <div className="hidden md:block">
           <ShinyEffect left={-1000} top={1900} size={1500} />
         </div>
       </div>
-      <div className="absolute inset-0">
+      <div className="">
         <ShinyEffect left={1000} top={2700} size={1500} />
         <div className="hidden md:block">
           <ShinyEffect left={-1200} top={3600} size={1500} />
