@@ -10,7 +10,9 @@ const Awareness = () => {
     >
       <h1 className="text-white font-krona text-3xl   md:text-4xl ">
         AWARENES SESSION
+        
       </h1>
+      
       <div className="flex mt-5 flex-col md:flex-row  items-center gap-10 justify-between md:mt-10">
         <div className="flex flex-col gap-10 md:flex md:flex-row md:justify-between ">
           <div className="md:flex md:flex-col gap-8">

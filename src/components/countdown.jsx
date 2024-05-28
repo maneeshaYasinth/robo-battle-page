@@ -30,7 +30,7 @@ const CountdownTimer = ({ targetDate }) => {
       {/* Add margin top */}
       <h2 className="text-white text-center text-3xl font-krona mb-6  pt-20 pb-4 relative">
         REGISTRATION CLOSING IN
-        <span className="block w-48 h-1 bg-white absolute left-1/2 transform -translate-x-1/2 bottom-0 mt-18 "></span>
+        {/* <span className="block w-48 h-1 bg-white absolute left-1/2 transform -translate-x-1/2 bottom-0 mt-18 "></span> */}
       </h2>
       <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12 pt-20">
         {" "}

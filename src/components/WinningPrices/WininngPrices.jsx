@@ -6,13 +6,13 @@ const WininngPrices = () => {
     <div className="px-10 md:px-20 p-5 max-w-screen h-full w-f  min-h-screen py-10 items-center justify-center mt-10">
       <div className=" font-krona text-2xl text-white justify-center items-center content-center flex">
 
-        <h1 className=" font-krona text-3xl md:text-4xl text-white justify-center items-center content-center">
+        <h1 className=" font-krona text-3xl md:text-4xl text-white justify-center items-center content-center px-10 flex text-center md:text-start md:flex">
 
           WINNING PRICES
         </h1>
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-8 mt-10 md:flex-row md:items-center md:justify-between lg:justify-between md:content-center">
+      <div className="flex flex-col justify-center items-center gap-8 mt-10 md:flex-row md:items-center md:justify-between lg:justify-between md:content-center ">
         {/* light weight */}
         <div className=" py-5">
           <h2 className=" flex flex-col gap-5  font-krona text-xl text-white justify-center items-center content-center ">

@@ -5,7 +5,7 @@ const desktopEvents = [
   { date: "2024 . 05 . 02", title: "Arena set up", x: 15, y: 27 },
   { date: "2024 . 05 . 14", title: "Workshop", x: 40, y: 65 },
   { date: "2024 . 06 . 04", title: "Registration closing", x: 65, y: 27 },
-  { date: "2024 . 05 . 25", title: "Awareness meeting", x: 90, y: 63 },
+  { date: "2024 . 06 . 08", title: "Awareness meeting", x: 90, y: 63 },
   { date: "2024 . 06 . 13", title: "Robot battle", x: 102, y: 50 },
 ];
 
@@ -31,7 +31,7 @@ const Timeline = () => {
     <>
       <h2 className="text-white text-center text-2xl md:text-3xl font-krona font-bold  pb-2 relative mt-20 md:mt-20">
         TIMELINE
-        <span className="block w-48 h-1 bg-white absolute left-1/2 transform -translate-x-1/2 bottom-0 mt-18 mb-0"></span>
+        {/* <span className="block w-48 h-1 bg-white absolute left-1/2 transform -translate-x-1/2 bottom-0 mt-18 mb-0"></span> */}
       </h2>
       <div className="hidden md:flex items-center justify-center min-h-[80vh] bg-gradient-to-r text-white overflow-hidden px-4 mt-0 pt-0">
         <div className="relative w-full max-w-6xl">

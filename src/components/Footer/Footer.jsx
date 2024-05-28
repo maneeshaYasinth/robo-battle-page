@@ -30,13 +30,13 @@ function Footer() {
                     </div>
                     <div className='lg:grid grid-cols-3 gap-0 mx-12 place-content-start mt-8 md:ml-6 '>
                         <a href="https://web.facebook.com/UOKRobotBattles">
-                            <IoLogoFacebook className='w-10 h-10 md:w-16 md:h-16 lg:mx-8 text-white'/>
+                            <IoLogoFacebook className='w-10 h-10 md:w-16 md:h-16 lg:mx-8 text-white/80'/>
                         </a>
                         <a href="https://www.linkedin.com/company/uokrobotbattles/posts/?feedView=all">
-                            <ImLinkedin className='w-10 h-10 md:w-14 md:h-14 lg:mx-4 text-white'/>
+                            <ImLinkedin className='w-9 h-9 md:w-14 md:h-14 lg:mx-4 text-white/80'/>
                         </a>
                         <a href="https://www.youtube.com/@ECSCUOK">
-                            <ImYoutube className='w-10 h-10 md:w-14 md:h-14 lg:mx-0 xl:-mx-4  text-white'/>
+                            <ImYoutube className='w-10 h-10 md:w-14 md:h-14 lg:mx-0 xl:-mx-4  text-white/80'/>
                         </a>
                     </div>
                 </div>
