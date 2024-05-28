@@ -6,7 +6,7 @@ const WininngPrices = () => {
     <div className="px-20 p-5 max-w-screen h-full w-f  min-h-screen py-10 items-center justify-center mt-10">
       <div className=" font-krona text-2xl text-white justify-center items-center content-center flex">
 
-        <h1 className=" font-krona text-2xl text-white justify-center items-center content-center">
+        <h1 className=" font-krona text-3xl md:text-4xl text-white justify-center items-center content-center">
 
           WINNING PRICES
         </h1>

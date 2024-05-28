@@ -25,7 +25,7 @@ const CountdownTimer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="md:mt-[0px]">
+    <div className="md:mt-[100px]">
       {" "}
       {/* Add margin top */}
       <h2 className="text-white text-center text-3xl font-krona mb-6  pt-20 pb-4 relative">

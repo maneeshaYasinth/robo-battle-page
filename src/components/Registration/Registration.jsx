@@ -39,7 +39,7 @@ const Registration = () => {
               />
             </div>
             <div>
-              <Button text="Go to Google" url="https://www.google.com" />
+              <Button text="Robo Design Rules" url="https://www.google.com" />
             </div>
           </div>
         </div>
