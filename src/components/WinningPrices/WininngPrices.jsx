@@ -3,7 +3,7 @@ import { GiTrophyCup } from "react-icons/gi";
 
 const WininngPrices = () => {
   return (
-    <div className="px-20 p-5 max-w-screen h-full w-f  min-h-screen py-10 items-center justify-center mt-10">
+    <div className="px-10 md:px-20 p-5 max-w-screen h-full w-f  min-h-screen py-10 items-center justify-center mt-10">
       <div className=" font-krona text-2xl text-white justify-center items-center content-center flex">
 
         <h1 className=" font-krona text-3xl md:text-4xl text-white justify-center items-center content-center">
@@ -67,7 +67,7 @@ const WininngPrices = () => {
         <div className=" mt-5 flex flex-col justify-center items-center">
           <div>
             <h2 className=" font-krona text-xl text-white justify-center items-center content-center">
-              Havy-weight
+              Heavy-weight
             </h2>
           </div>
           {/* giant nut image */}

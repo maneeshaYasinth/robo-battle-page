@@ -10,7 +10,7 @@ const Registration = () => {
       >
         Registration
       </h1>
-      <div className="flex flex-col justify-center items-center gap-8 md:justify-between md:gap-10 md:flex-row py-5 mt-5  content-center text-center">
+      <div className="flex flex-col justify-center items-center gap-8 md:justify-between md:gap-10 md:flex-row py-5 mt-10  content-center text-center">
         <div className=" text-center flex justify-center items-center w-[300px] shadow-2xl shadow-pink-500 rounded-lg md:hidden">
           <img src="/robo front.png" alt="robot photo" />
         </div>
@@ -32,7 +32,8 @@ const Registration = () => {
               </button>{" "}
             </a> */}
 
-            <div>
+           <div className="flex gap-8 flex-col md:flex-row md:gap-20">
+           <div>
               <Button
                 text="Register Now"
                 url="https://docs.google.com/forms/d/1aW2N9A0GmMuo4zoIm7gCOGZIWwO4zoyA-lY4JXlxypQ/viewform?edit_requested=true"
@@ -41,6 +42,7 @@ const Registration = () => {
             <div>
               <Button text="Robo Design Rules" url="https://www.google.com" />
             </div>
+           </div>
           </div>
         </div>
       </div>

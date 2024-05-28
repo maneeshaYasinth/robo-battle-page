@@ -49,7 +49,7 @@ const TeamCard = ({ member, className, index }) => (
 );
 
 const Team = () => (
-  <div className=" md:mb-20 md:mt-[-50px]">
+  <div className=" md:mb-20 md:mt-[-50px] mb-10 -mt-10">
     <h2 className="relative pt-20 pb-2 mt-5 mb-6 text-3xl font-bold text-center text-white md:text-4xl font-krona md:mt-20">
       CONTACT US
       <span className="absolute bottom-0 block w-48 h-1 mb-0 transform -translate-x-1/2 bg-white left-1/2 mt-18"></span>

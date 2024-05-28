@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 const Awareness = () => {
   return (
     <div
-      className="md:px-20 px-10 mt-[60px] py-5  md:mt-[-80px] items-center gap-10
+      className="md:px-20 px-10 mt-[40px] py-5  md:mt-[-80px] items-center gap-10
     md:text-start
     text-center"
     >
@@ -27,7 +27,7 @@ const Awareness = () => {
                 Watch Now
               </button>{" "}
             </a> */}
-            <div>
+            <div className="mt-10">
               <Button
                 text="Watch Now"
                 url="https://drive.google.com/file/d/12-g5isYXt1Hpny74pIzvhhKUxRroL5XZ/view?usp=drive_link"
