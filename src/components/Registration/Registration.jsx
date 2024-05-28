@@ -10,8 +10,8 @@ const Registration = () => {
         Registration
       </h1>
       <div className="flex flex-col justify-center items-center gap-8 md:justify-between md:gap-10 md:flex-row py-5 mt-5  content-center text-center">
-        <div className="">
-          <img src="/robo.png" alt="robot photo" />
+        <div className=" text-center flex justify-center items-center w-[300px] shadow-2xl shadow-pink-500 rounded-lg md:hidden">
+          <img src="/robo front.png" alt="robot photo" />
         </div>
         <div className=" md:text-start  md:flex-col md:justify-start md:items-start">
           <p className=" text-white font-poppins text-justify-end opacity-90 text-xl md:text-start  space-y-4  mt-10 font-normal leading-normal md:text-xl md:ml-[300px] text-center ">
