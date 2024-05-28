@@ -1,55 +1,51 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
 import Button from "../Button/Button";
-
-function Home() {
+// testing home
+const Home = () => {
   return (
-    <>
-      <div className="md:flex md:flex:row md:justify-center lg:mt-[-50px] md:gap-10 lg:gap-10">
-        <div className="flex-col justify-center text-center item-center lg:flex lg:flex-col lg:justify-start lg:items-start lg:text-start lg:ml-[-700px]">
-          <div className="max-w-xl mt-20 ml-10 text-white md:ml-20 md:flex-row">
-            <div className="min-[400px]:text-left text-xl leading-normal tracking-widest text-left uppercase max-w-screen font-krona mt-14 mt-30">
-              <h1 className="text-xl text-center md:mb-8 md:text-left md:mt-8">
-                Creative robotics
-              </h1>
-            </div>
-            <div className="mr-1 text-5xl leading-normal tracking-widest text-center text-white uppercase md:text-left md:text-6xl max-w-screen font-krona ">
-              UOK ROBOT BATTLES
-            </div>
-            <div className="text-4xl leading-normal tracking-widest text-center text-white uppercase md:mb-5 max-w-screen font-krona md:text-left md:text:2xl ">
-              2K24
-            </div>
-            <div className="text-center">
-              <p className="leading-normal tracking-widest text-white font-poppins md:text-left px-10 md:px-0 lg:px-0 ">
-                Welcome to the ultimate showdown of engineering prowess and
-                strategy. Here, brilliant minds converge to pit their robotic
-                creations against one another in a thrilling display of
-                technological might. Join us in the arena where the future of
-                robotics comes alive.
-              </p>
-            </div>
-            {/* <div>
-              <button className="inline-block px-12 py-3 ml-3 mr-4 text-center text-white duration-300 border border-transparent sm:justify-items-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl font-poppins mt-7 hover:text-white hover:border hover:bg-transparent hover:border-pink-300 ">
-                <a href="#">Register</a>
-              </button>
-            </div>
-            <Button/> */}
-            <div className="md:mt-10">
-              <Button text="Register" url="#" />
-            </div>
-          </div>
+    <div className=" flex flex-col justify-center items-center md:flex-row px-10 text-center mt-20 gap-5 mb-5 md:ml-[-50px]">
+      <div className=" text-white flex flex-col md:justify-start md:flex md:text-start md:items-start md:mt-3 md:px-20 md:mb-20 justify-center items-center gap-2">
+        <div>
+          <h2 className=" font-krona text-xl opacity-90 md:text-3xl">
+            CRETIVE ROBOTICS
+          </h2>
         </div>
-        <div className="bottom-0 hidden w-full py-10 top-12 xl:w-1/2 md:absolute md:mr-[-150px] right-1 md:block md:-mt-5 mt-9  ">
-          <img
-            className="lg:w-[500px] lg:h-[600px]
-       "
-            src="/robo-new-home.png"
-            alt="1"
+        <div>
+          <h1 className=" font-krona text-5xl leading-normal md:text-7xl">
+            UOK ROBOT BATTLES <br />
+            2k24
+          </h1>
+        </div>
+        {/* <div>
+                <h1 className=' font-krona text-4xl'>2k24</h1>
+            </div> */}
+        <div>
+          <p className=" font-krona text-lg leading-normal opacity-80">
+            Welcome to the ultimate showdown of engineering prowess and
+            strategy. Here, brilliant minds converge to pit their robotic
+            creations against one another in a thrilling display of
+            technological might. Join us in the arena where the future of
+            robotics comes alive.
+          </p>
+        </div>
+        <div className="mt-5">
+          <Button
+            text={"Register"}
+            url={
+              "https://docs.google.com/forms/d/1aW2N9A0GmMuo4zoIm7gCOGZIWwO4zoyA-lY4JXlxypQ/viewform?edit_requested=true"
+            }
           />
         </div>
       </div>
-    </>
+      <div className=" ">
+        <img
+          className="   hidden md:block md:w-[2400px] md:h-[550px] md:-mt-20 md:min-w-max md:w-"
+          src="/robo-new-home.png"
+          alt=""
+        />
+      </div>
+    </div>
   );
-}
+};
 
 export default Home;
