@@ -36,7 +36,7 @@ const Awareness = () => {
           </div>
           <div>
             <img
-              className="w-[400px] md:w-[2000px] md:h-[250px] mr-10 rounded-lg  border-violet-900 border-8"
+              className="w-[400px] md:w-[2000px] md:h-[250px] mr-10 rounded-lg  border-violet-900 border-8 shadow-2xl shadow-violet-600"
               src="/Youtube - 3.png"
               alt="robo"
             />

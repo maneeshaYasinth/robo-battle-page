@@ -39,7 +39,7 @@ const Home = () => {
       </div>
       <div className=" ">
         <img
-          className="   hidden md:block md:w-[2400px] md:h-[550px] md:-mt-10 md:min-w-max "
+          className="   hidden md:block md:w-[2400px] md:h-[550px] md:-mt-10 md:min-w-max shadow-2xl shadow-violet-500 rounded-lg"
           src="/robo-new-home.png"
           alt=""
         />

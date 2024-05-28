@@ -7,12 +7,15 @@ const About = () => {
       <div className=" font-krona text-3xl md:text-4xl text-white ">
         <h1 className="  text-center md:text-start font-krona">About Us</h1>
       </div>
-      <div className=" flex flex-col justify-center items-center gap-8 mt-10 content-center md:flex-row md:justify-between  ">
+      <div className=" flex flex-col justify-center items-center gap-8 mt-10 content-center md:flex-row md:justify-between lg:justify-between ">
         {/* image */}
-        <div>
-          <img className="md:w-[1000px]" src="/robo.png" alt="robo" />
+        <div className=" ">
+          <img className="md:w-[3000px] hidden md:block shadow-2xl shadow-violet-500 rounded-lg md:mb-20 " src="/about-lg.jpg" alt="robo" />
         </div>
-        <div className="md:flex md:items-start flex flex-col justify-center items-center gap-4 content-center md:mt-10 ">
+        <div>
+          <img className=" md:hidden shadow-2xl shadow-violet-500 rounded-lg w-60 h-60" src=" /about-front.jpg" alt="robo  mobile screen" />
+        </div>
+        <div className="md:flex md:items-start flex flex-col justify-center items-center gap-4 content-center md:mt-10 md:ml-20 ">
           <div className=" font-krona text-xl md:text-3xl text-white text-center md:text-start ">
             <h1 className="md:text-start md:flex md:justify-start md:items-start">
               What is the <br /> UOK Robot Battles ?
