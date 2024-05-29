@@ -20,11 +20,11 @@ const Navbar = () => {
 
           {/* Nav Links - Desktop */}
           <div className="hidden sm:flex sm:items-center sm:ml-6 sm:space-x-4">
-            <NavLink href="/">Home</NavLink>
-            <NavLink href="/registeration">Register</NavLink>
-            <NavLink href="/about-us">About</NavLink>
-            <NavLink href="/timeline">Timeline</NavLink>
-            <NavLink href="/contact-us">Contact</NavLink>
+            <NavLink href="#home">Home</NavLink>
+            <NavLink href="#register">Register</NavLink>
+            <NavLink href="#about">About</NavLink>
+            <NavLink href="#timeline">Timeline</NavLink>
+            <NavLink href="#contact">Contact</NavLink>
           </div>
 
           {/* Mobile Menu Button */}
@@ -60,21 +60,11 @@ const Navbar = () => {
 
             {/* Navigation Links */}
             <div className="flex flex-col items-start space-y-4 ">
-              <NavLink className="text-white" href="/">
-                Home
-              </NavLink>
-              <NavLink className="text-white" href="/registeration">
-                Register
-              </NavLink>
-              <NavLink className="text-white" href="/about-us">
-                About
-              </NavLink>
-              <NavLink className="text-white" href="/timeline">
-                Timeline
-              </NavLink>
-              <NavLink className="text-white" href="/contact-us">
-                Contact
-              </NavLink>
+            <NavLink href="#home">Home</NavLink>
+            <NavLink href="#register">Register</NavLink>
+            <NavLink href="#about">About</NavLink>
+            <NavLink href="#timeline">Timeline</NavLink>
+            <NavLink href="#contact">Contact</NavLink>
             </div>
           </div>
 

@@ -16,8 +16,8 @@ const App = () => {
     <div className="min-h-screen relative overflow-hidden">
       {" "}
       {/* Ensure relative positioning and no overflow */}
-      <Navbar />
-      <div className="">
+      <a name="home"><Navbar /></a>
+      {/* <div className="">
         <ShinyEffect left={900} top={-300} size={1500} />
         <div className="hidden md:block">
           <ShinyEffect left={-1000} top={700} size={1500} />
@@ -37,15 +37,15 @@ const App = () => {
         <div className="hidden md:block">
           <ShinyEffect left={1000} top={4500} size={2000} />
         </div>
-      </div>
-      <Home />
-      <Countdown />
-      <Registration />
+      </div> */}
+      <Home/>
+      <Countdown/>
+      <a name="register"><Registration/></a>
       <Awareness />
-      <About />
+      <a name="about"><About/></a>
       <WininngPrices />
-      <Timeline />
-      <Team />
+      <a name="timeline"><Timeline/></a>
+      <a name="contact"><Team/></a>
       <Footer />
     </div>
   );
