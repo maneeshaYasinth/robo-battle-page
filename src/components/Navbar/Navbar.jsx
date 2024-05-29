@@ -59,7 +59,7 @@ const Navbar = () => {
             </div>
 
             {/* Navigation Links */}
-            <div className="flex flex-col items-start space-y-4 ">
+            <div className="flex flex-col items-start space-y-4 " onClick={toggleMenu}>
             <NavLink href="#home">Home</NavLink>
             <NavLink href="#register">Register</NavLink>
             <NavLink href="#about">About</NavLink>
@@ -69,10 +69,10 @@ const Navbar = () => {
           </div>
 
           {/* Overlay - Close Sidebar on Click */}
-          <div
+          {/* <div
             className="fixed inset-0 bg-black bg-opacity-50"
             onClick={toggleMenu}
-          ></div>
+          ></div> */}
         </div>
       )}
     </nav>
