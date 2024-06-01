@@ -5,11 +5,11 @@ import himal from "../../assets/himal.jpg";
 
 const teamMembers = [
   {
-    role: "President",
-    name: "Chamith Dilshan",
-    phone: "+94 78 256 3766",
-    email: "dilshankmc@gmail.com",
-    photo: chamith, // Dummy photo
+    role: "Project Manager",
+    name: "L H G Gunawardhana",
+    phone: "+94 76 786 3340",
+    email: "himalgeethanjana18@gmail.com",
+    photo: himal, // Dummy photo
   },
   {
     role: "Senior Treasurer",
@@ -21,12 +21,12 @@ const teamMembers = [
       "Lecturer, Department of Physics and Electronics, Faculty of Science, University of Kelaniya",
   },
   {
-    role: "Project Manager",
-    name: "L H G Gunawardhana",
-    phone: "+94 76 786 3340",
-    email: "himalgeethanjana18@gmail.com",
-    photo: himal,
-  },
+    role: " President",
+    name: "Chamith Dilshan",
+    phone: "+94 78 256 3766",
+    email: "dilshankmc@gmail.com",
+    photo: chamith,
+  },
 ];
 
 const TeamCard = ({ member, className, index }) => (

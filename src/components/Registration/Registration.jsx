@@ -45,7 +45,7 @@ const Registration = () => {
               />
             </div>
             <div>
-              <Button text="Robo Design Rules" url="https://www.google.com" />
+              <Button text="Robo Design Rules" url="https://drive.google.com/file/d/1MX2Jx5jBzSYpp8lU6p_3GJgD7AlYZxL_/view?usp=drivesdk" />
             </div>
            </div>
           </div>
