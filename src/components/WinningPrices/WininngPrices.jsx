@@ -29,7 +29,7 @@ const WininngPrices = () => {
                 Champions
               </p>
               <p className=" border rounded-xl border-purple-500 bg-gradient-to-r from-purple-700 to-fuchsia-950 md:px-3 px-3 ">
-                Rs.20,000 + Giant Nut
+                Rs.100,000 + Giant Nut
               </p>
             </div>
           </div>

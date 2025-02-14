@@ -8,7 +8,7 @@
 
 body {
   font-family: "Space Grotesk", sans-serif;
-  background: linear-gradient(to right, #101021, #441762);
+  background: linear-gradient(to right, #b0b0b6, #036cb3);
   background-size: cover;
   background-repeat: none;
 }
@@ -39,5 +39,5 @@ p {
   pointer-events: none;
 
   z-index: 1;
-  background: radial-gradient(circle, #ff10f1, transparent 70%);
+  background: radial-gradient(circle, #e95c25, transparent 70%);
 }
