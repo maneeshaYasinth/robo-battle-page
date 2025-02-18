@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import logo from "../../assets/logo.png"; // Adjust the path to your logo
 
@@ -20,11 +21,11 @@ const Navbar = () => {
 
           {/* Nav Links - Desktop */}
           <div className="hidden sm:flex sm:items-center sm:ml-6 sm:space-x-4">
-            <NavLink href="#home">Home</NavLink>
-            <NavLink href="#register">Register</NavLink>
-            <NavLink href="#about">About</NavLink>
-            <NavLink href="#timeline">Timeline</NavLink>
-            <NavLink href="#contact">Contact</NavLink>
+            <NavLink to="/#home">Home</NavLink>
+            <NavLink to="/#register">Register</NavLink>
+            <NavLink to="/#about">About</NavLink>
+            <NavLink to="/#timeline">Timeline</NavLink>
+            <NavLink to="/#contact">Contact</NavLink>
           </div>
 
           {/* Mobile Menu Button */}
@@ -60,11 +61,12 @@ const Navbar = () => {
 
             {/* Navigation Links */}
             <div className="flex flex-col items-start space-y-4 " onClick={toggleMenu}>
-            <NavLink href="#home">Home</NavLink>
-            <NavLink href="#register">Register</NavLink>
-            <NavLink href="#about">About</NavLink>
-            <NavLink href="#timeline">Timeline</NavLink>
-            <NavLink href="#contact">Contact</NavLink>
+            <NavLink to="/#home">Home</NavLink>
+            <NavLink to="/#register">Register</NavLink>
+            <NavLink to="/#about">About</NavLink>
+            <NavLink to="/#timeline">Timeline</NavLink>
+            <NavLink to="/#">Contact</NavLink>
+          
             </div>
           </div>
 
@@ -80,14 +82,33 @@ const Navbar = () => {
 };
 
 // NavLink Component for Consistency
-const NavLink = ({ href, children }) => {
+const NavLink = ({ to, children }) => {
+  const navigate = useNavigate();
+
+  const handleClick = (e) => {
+    if (to.startsWith("/#")) {
+      e.preventDefault();
+      const sectionId = to.replace("/#", ""); // Remove "/#" to get the ID
+      navigate("/"); // Navigate to the home page first
+      setTimeout(() => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100); // Delay scrolling slightly after navigation
+    } else {
+      navigate(to);
+    }
+  };
+
   return (
-    <a
-      href={href}
+    <Link
+      to={to}
+      onClick={handleClick}
       className="w-full px-4 py-2 text-lg font-medium text-white rounded-full hover:bg-gradient-to-b from-purple-700 to-fuchsia-950 hover:text-pink-100"
     >
       {children}
-    </a>
+    </Link>
   );
 };
 
