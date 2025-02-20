@@ -2,7 +2,7 @@ import React from 'react';
 
 const RegisterForm = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center ">
+    <div className="min-h-screen flex flex-col items-center justify-center font-krona">
       <h1 className="text-3xl font-bold mb-6">Register for UOK Robot Battles 2k24</h1>
       <form className="bg-white p-6 rounded shadow-md w-full max-w-md">
         <div className="mb-4">

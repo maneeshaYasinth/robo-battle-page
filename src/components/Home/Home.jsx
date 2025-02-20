@@ -32,7 +32,7 @@ const Home = () => {
           <Button
             text={"Register"}
             url={
-              "https://docs.google.com/forms/d/1aW2N9A0GmMuo4zoIm7gCOGZIWwO4zoyA-lY4JXlxypQ/viewform?edit_requested=true"
+              "/Register"
             }
           />
         </div>
