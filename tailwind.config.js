@@ -7,7 +7,9 @@ export default {
         krona: ["Krona One", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
         geliat: ["Geliat Alt Bold", "sans-serif"],
-        orbitron: ["Orbitron", "sans-serif"], // Add Orbitron font
+        orbitron: ["Orbitron", "sans-serif"],
+        transrobotics: ['SF TransRobotics Condensed', 'sans-serif'],
+        bebasneue: ['Bebas Neue', 'sans-serif'],
       },
     },
   },

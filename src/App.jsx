@@ -21,7 +21,7 @@ const App = () => {
       <Routes>
           <Route path="/" element={
             <div >
-              <section id="home"><Home /></section>
+              <section id="home" className="pt-5"><Home /></section>
               <Countdown />
               <section id="register"><Registration /></section>
               <Awareness />
