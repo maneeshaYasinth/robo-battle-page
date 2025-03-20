@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Countdown from "./components/countdown";
 import Timeline from "./components/timeline";
 import Navbar from "./components/Navbar/Navbar";
@@ -10,44 +11,32 @@ import Team from "./components/ContactUs/Contact";
 import Footer from "./components/Footer/Footer";
 import WininngPrices from "./components/WinningPrices/WininngPrices";
 import About from "./components/AboutUs/About";
+import RegisterForm from "./components/RegisterForm/RegisterForm";
 
 const App = () => {
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      {" "}
-      {/* Ensure relative positioning and no overflow */}
-      <a name="home"><Navbar /></a>
-      {/* <div className="">
-        <ShinyEffect left={900} top={-300} size={1500} />
-        <div className="hidden md:block">
-          <ShinyEffect left={-1000} top={700} size={1500} />
-        </div>
+    <Router>
+      <div className="min-h-screen relative overflow-hidden">
+      <Navbar />
+      <Routes>
+          <Route path="/" element={
+            <div >
+              <section id="home" className="pt-5"><Home /></section>
+              <Countdown />
+              <section id="register"><Registration /></section>
+              <Awareness />
+              <section id="about"><About /></section>
+              <WininngPrices />
+              <section id="timeline"><Timeline /></section>
+              <section id="contact"><Team /></section>
+              <Footer />
+            </div>} />
+
+          <Route path="/register" element={<RegisterForm />} />
+        </Routes>
       </div>
-      <div className="">
-        <ShinyEffect left={1000} top={1200} size={1500} />
-        <div className="hidden md:block">
-          <ShinyEffect left={-1000} top={1900} size={1500} />
-        </div>
-      </div>
-      <div className="">
-        <ShinyEffect left={1000} top={2700} size={1500} />
-        <div className="hidden md:block">
-          <ShinyEffect left={-1200} top={3600} size={1500} />
-        </div>
-        <div className="hidden md:block">
-          <ShinyEffect left={1000} top={4500} size={2000} />
-        </div>
-      </div> */}
-      <Home/>
-      <Countdown/>
-      <a name="register"><Registration/></a>
-      <Awareness />
-      <a name="about"><About/></a>
-      <WininngPrices />
-      <a name="timeline"><Timeline/></a>
-      <a name="contact"><Team/></a>
-      <Footer />
-    </div>
+    </Router>
+
   );
 };
 

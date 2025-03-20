@@ -1,14 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'SF TransRobotics Condensed';
+  src: url('./assets/fonts/SFTransRoboticsCondensed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   font-family: "Space Grotesk", sans-serif;
-  background: linear-gradient(to right, #101021, #441762);
+  background: linear-gradient(to bottom, #11155E, #000004);
   background-size: cover;
   background-repeat: none;
 }
@@ -39,5 +46,5 @@ p {
   pointer-events: none;
 
   z-index: 1;
-  background: radial-gradient(circle, #ff10f1, transparent 70%);
+  background: radial-gradient(circle, #e95c25, transparent 70%);
 }
