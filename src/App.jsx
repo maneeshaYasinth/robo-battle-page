@@ -17,8 +17,8 @@ const App = () => {
   return (
     <Router>
       <div className="min-h-screen relative overflow-hidden">
-      <Navbar />
-      <Routes>
+        <Navbar />
+        <Routes>
           <Route path="/" element={
             <div >
               <section id="home" className="pt-5"><Home /></section>
@@ -29,7 +29,7 @@ const App = () => {
               <WininngPrices />
               <section id="timeline"><Timeline /></section>
               <section id="contact"><Team /></section>
-              <Footer />
+              <section id="footer"><Footer /></section>
             </div>} />
 
           <Route path="/register" element={<RegisterForm />} />
